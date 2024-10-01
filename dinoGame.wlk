@@ -8,14 +8,15 @@ object juego{
 		game.width(12)
 		game.height(8)
 		game.title("Dino Game")
-		game.boardGround("fondo.png")
+		game.boardGround("fondo3.png")
 		game.addVisual(suelo)
 		game.addVisual(cactus)
 		game.addVisual(dino)
 		game.addVisual(reloj)
 	
+		keyboard.up().onPressDo({dino.saltar()})
 		keyboard.space().onPressDo{ self.jugar()}
-		game.onCollideDo(dino,{ obstaculo => obstaculo.chocar()})
+		game.onCollideDo(dino,{ obstaculo => obstaculo.chocar(dino)})
 		
 	} 
 	
@@ -52,19 +53,20 @@ object gameOver {
 object reloj {
 	var property tiempo = 0 
 	method text() = tiempo.toString()
-  //method textColor() = "00FF00FF"
+  	method textColor() = "00FF00FF"
 	method position() = game.at(1, game.height()-1)
 	
 	method pasarTiempo() {
-		//COMPLETAR
+		if (!self.detener()){
+			tiempo+=1
+		}
 	}
 	method iniciar(){
 		tiempo = 0
-		game.onTick(100,"tiempo",{self.pasarTiempo()})
+
+		game.onTick(1000,"tiempo",{self.pasarTiempo()})
 	}
-	method detener(){
-		//COMPLETAR
-	}
+	method detener() = cactus.position() == dino.position()
 }
 
 object cactus {
@@ -79,19 +81,19 @@ object cactus {
 	}
 	
 	method mover(){
-		//COMPLETAR
+		if (!self.detener()){
+			position = position.left(1)
+		}
 	}
 	
-	method chocar(){
-		//COMPLETAR
+	method chocar(dino){
+		game.schedule(1000, {juego.terminar()})
 	}
-    method detener(){
-		//COMPLETAR
-	}
+
+    method detener() = self.position() == dino.position() 
 }
 
 object suelo{
-
 	method position() = game.origin().up(1)
 	method image() = "suelo.png"
 }
@@ -104,7 +106,8 @@ object dino {
 	method image() = "dino.png"
 	
 	method saltar(){
-		//COMPLETAR
+		game.schedule(velocidad, {self.subir()})
+		game.schedule(1000, {self.bajar()})
 	}
 	
 	method subir(){
