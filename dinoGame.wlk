@@ -15,7 +15,7 @@ object juego{
 		game.addVisual(reloj)
 	
 		keyboard.space().onPressDo{ self.jugar()}
-		game.onCollideDo(dino,{ obstaculo => obstaculo.chocar()})
+		game.onCollideDo(dino,{ obstaculo => obstaculo.chocar(dino)})
 		
 	} 
 	
@@ -52,7 +52,7 @@ object gameOver {
 object reloj {
 	var property tiempo = 0 
 	method text() = tiempo.toString()
-  //method textColor() = "00FF00FF"
+  	method textColor() = "00FF00FF"
 	method position() = game.at(1, game.height()-1)
 	
 	method pasarTiempo() {
@@ -79,12 +79,14 @@ object cactus {
 	}
 	
 	method mover(){
-		//COMPLETAR
+		position = position.left(1)
 	}
 	
-	method chocar(){
-		//COMPLETAR
+	method chocar(dino){
+		game.say(dino,"YOU LOSE")
+		game.schedule(1000, {game.stop()})
 	}
+
     method detener(){
 		//COMPLETAR
 	}
