@@ -89,6 +89,7 @@ object cactus {
 
     method detener(){
 		//COMPLETAR
+		//
 	}
 }
 
