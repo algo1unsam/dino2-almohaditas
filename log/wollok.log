@@ -2000,3 +2000,15 @@
 {"level":"info","message":"onRequest - completionItem/resolve","timestamp":"2024-10-01T22:41:30.062Z"}
 {"level":"info","message":"⌛ Building environment","timeElapsed":105,"timestamp":"2024-10-01T22:41:30.167Z"}
 {"level":"info","message":"⌛ Validating dinoGame.wlk","timeElapsed":146,"timestamp":"2024-10-01T22:41:30.314Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":228,"timestamp":"2024-10-01T23:18:26.546Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Users/Alehh/OneDrive/Documentos/Wollok/dino2-almohaditas","timestamp":"2024-10-01T23:18:26.565Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":131,"timestamp":"2024-10-01T23:18:26.796Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":265,"timestamp":"2024-10-01T23:18:27.063Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":122,"timestamp":"2024-10-01T23:18:27.187Z"}
+{"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":239,"timestamp":"2024-10-01T23:18:27.426Z"}
+{"level":"info","message":"⌛ Validating dinoGame.wlk","timeElapsed":174,"timestamp":"2024-10-01T23:18:27.600Z"}
+{"level":"info","message":"⌛ Validating dino.wtest","timeElapsed":440,"timestamp":"2024-10-01T23:18:28.042Z"}
+{"exitCode":0,"level":"info","message":"👾 Game executed mainExample.DinoGame on c:\\Users\\Alehh\\OneDrive\\Documentos\\Wollok\\dino2-almohaditas","timeElapsed":8030,"timestamp":"2024-10-01T23:19:28.883Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":245,"timestamp":"2024-10-01T23:25:14.290Z"}
+{"level":"info","message":"⌛ Validating dinoGame.wlk","timeElapsed":205,"timestamp":"2024-10-01T23:25:14.503Z"}
+{"exitCode":0,"level":"info","message":"👾 Game executed mainExample.DinoGame on c:\\Users\\Alehh\\OneDrive\\Documentos\\Wollok\\dino2-almohaditas","timeElapsed":10623,"timestamp":"2024-10-01T23:26:44.753Z"}

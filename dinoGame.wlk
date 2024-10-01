@@ -8,7 +8,7 @@ object juego{
 		game.width(12)
 		game.height(8)
 		game.title("Dino Game")
-		game.boardGround("fondo.png")
+		game.boardGround("fondo3.png")
 		game.addVisual(suelo)
 		game.addVisual(cactus)
 		game.addVisual(dino)
