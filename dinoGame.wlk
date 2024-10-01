@@ -79,17 +79,16 @@ object cactus {
 	}
 	
 	method mover(){
-		position = position.left(1)
+		if (!self.detener()){
+			position = position.left(1)
+		}
 	}
 	
 	method chocar(dino){
-		game.say(dino,"YOU LOSE")
-		game.schedule(1000, {game.stop()})
+		game.schedule(1000, {juego.terminar()})
 	}
 
-    method detener(){
-		position = position.dino()
-	}
+    method detener() = self.position() == dino.position() 
 }
 
 object suelo{
