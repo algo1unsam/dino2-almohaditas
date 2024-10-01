@@ -63,6 +63,7 @@ object reloj {
 	}
 	method iniciar(){
 		tiempo = 0
+
 		game.onTick(1000,"tiempo",{self.pasarTiempo()})
 	}
 	method detener() = cactus.position() == dino.position()
