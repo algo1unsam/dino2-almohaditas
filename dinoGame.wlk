@@ -57,26 +57,16 @@ object reloj {
 	method position() = game.at(1, game.height()-1)
 	
 	method pasarTiempo() {
-<<<<<<< HEAD
-	
-	   tiempo+=1
-=======
 		if (!self.detener()){
 			tiempo+=1
 		}
->>>>>>> caff11452e7f26301ca939a0d646d77216c9705c
 	}
 	method iniciar(){
 		tiempo = 0
 
 		game.onTick(1000,"tiempo",{self.pasarTiempo()})
 	}
-<<<<<<< HEAD
-	method detener() = cactus.position() == dino.position() 
-
-=======
 	method detener() = cactus.position() == dino.position()
->>>>>>> caff11452e7f26301ca939a0d646d77216c9705c
 }
 
 object cactus {
