@@ -625,3 +625,20 @@
 {"level":"info","message":"⌛ Building environment","timeElapsed":243,"timestamp":"2024-10-01T04:08:48.918Z"}
 {"level":"info","message":"onRequest - WORKSPACE_URI:file:///home/leon/Work/ALGO1/2024/Workspace/dino2","timestamp":"2024-10-01T04:08:48.974Z"}
 {"level":"info","message":"Removing diagnostics from /home/leon/Work/ALGO1/2024/Workspace/dino2/testExample.wtest","timestamp":"2024-10-01T04:08:49.020Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":129,"timestamp":"2024-10-01T21:22:00.987Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Julian/Wollok/dino2-almohaditas","timestamp":"2024-10-01T21:22:01.001Z"}
+{"level":"info","message":"⌛ Validating dinoGame.wlk","timeElapsed":118,"timestamp":"2024-10-01T21:22:01.340Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":111,"timestamp":"2024-10-01T21:22:01.452Z"}
+{"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":119,"timestamp":"2024-10-01T21:22:01.578Z"}
+{"level":"info","message":"⌛ Validating dinoGame.wlk","timeElapsed":112,"timestamp":"2024-10-01T21:22:01.779Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":116,"timestamp":"2024-10-01T21:23:00.247Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":136,"timestamp":"2024-10-01T21:23:52.174Z"}
+{"level":"info","message":"⌛ Validating dinoGame.wlk","timeElapsed":126,"timestamp":"2024-10-01T21:23:52.309Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":105,"timestamp":"2024-10-01T21:25:14.578Z"}
+{"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":131,"timestamp":"2024-10-01T21:25:19.720Z"}
+{"level":"info","message":"⌛ Validating dinoGame.wlk","timeElapsed":109,"timestamp":"2024-10-01T21:26:08.089Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":101,"timestamp":"2024-10-01T21:26:08.700Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":365,"timestamp":"2024-10-01T22:01:16.564Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Julian/Wollok/dino2-almohaditas","timestamp":"2024-10-01T22:01:16.571Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":295,"timestamp":"2024-10-01T22:01:16.868Z"}
+{"level":"info","message":"⌛ Validating dinoGame.wlk","timeElapsed":129,"timestamp":"2024-10-01T22:01:17.156Z"}

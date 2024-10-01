@@ -52,7 +52,7 @@ object gameOver {
 object reloj {
 	var property tiempo = 0 
 	method text() = tiempo.toString()
-  //method textColor() = "00FF00FF"
+    method textColor() = "00FF00FF"
 	method position() = game.at(1, game.height()-1)
 	
 	method pasarTiempo() {
@@ -63,7 +63,7 @@ object reloj {
 		game.onTick(100,"tiempo",{self.pasarTiempo()})
 	}
 	method detener(){
-		//COMPLETAR
+		
 	}
 }
 
